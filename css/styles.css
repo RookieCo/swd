@@ -892,8 +892,9 @@ active {
 
 
 .news-container p {
-  margin-top: 10px;
-  text-indent: 2rem;
+    margin-top: 10px;
+    text-indent: 2rem;
+    padding: 0 80px;
 }
 
 .centercontact {
