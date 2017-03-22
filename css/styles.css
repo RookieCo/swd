@@ -1308,6 +1308,7 @@ table span {
   position: relative;
   width: 100%;
   height: 100px;
+  background-size: cover;
 
 }
 
@@ -1388,6 +1389,7 @@ table span {
   position: relative;
   width: 100%;
   height: 100px;
+  background-size: cover;
 
 }
 
