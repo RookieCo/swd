@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="vendor/grid.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="vendor/ionicons.min.css">
+  <link rel="stylesheet" href="vendor/responsiveslides.css">
+
+
+  <title>SWD web</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+  <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+  <title>百度地图API自定义地图</title>
+  <!--引用百度地图API-->
+  <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+  </style>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+  
+</head>
+<body>
+
+  <!--TOP PART---------------------------------->
+  <header>
+    <div class="row span-3-of-3" >
+      <div class="tophead">
+        <a href="index.html"><img src="css/img/logo.gif" alt="logo" class="logo"></a>
+        <h1 class="cnname">美国顺缔新材料（上海）有限公司<br>
+          <span>SWD NEW MATERIAL (SHANGHAI) CO.,LTD</span></h1>
+          <p><a href="index.html">中文</a>&nbsp;<a href="indexe.html">English</a></p>
+        </div>
+
+         <nav class="main-nav row">
+          <div class="main-nav-wrapper">
+            <ul class="main-nav1 js--main-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="about.html">关于SWD</a></li>
+            <li><a href="product.html">产品系列</a></li>
+            <li><a href="project.html">工程案例</a></li>
+            <li><a href="quality.html">质量体系</a></li>
+            <li><a href="contactus.html">联系我们</a></li>
+          </ul> 
+          <a id="hiddenthis" class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+          </div>
+                                      
+        </nav>   
+      </div>
+    </header>
+
+
+    <!--FIRST COLUM/////////////////////////////////////////-->
+
+    <section class="contact-container row">
+      <div class="contact-wrapper">
+        <h2>联系我们</h2>
+        
+        <div class="contact-list">
+          <ul>
+            <li><i class="ion-ios-person contacticon"></i><p>国内市场部：王先生</p></li>
+            <li><i class="ion-ios-telephone contacticon"></i><p>021-51905301</p></li>
+            <li><i class="ion-android-phone-portrait contacticon"></i><p>131 2061 6592</p></li>
+            <li><i class="ion-email contacticon"></i><p>swd@swdpu.com.cn</p></li>
+          </ul>
+          <ul>
+            <li><i class="ion-ios-person contacticon"></i><p>国内市场部：肖先生</p></li>
+            <li><i class="ion-ios-telephone contacticon"></i><p>021-51905301</p></li>
+            <li><i class="ion-android-phone-portrait contacticon"></i><p>131 6625 4009</p></li>
+            <li><i class="ion-email contacticon"></i><p>swd@swdpu.com.cnp</p></li>
+          </ul>
+          <ul>
+            <li><i class="ion-ios-person contacticon"></i><p>国内市场部：欧阳先生</p></li>
+            <li><i class="ion-ios-telephone contacticon"></i><p>021-51905301</p</li>
+            <li><i class="ion-android-phone-portrait contacticon"></i><p>159 0187 8584</p></li>
+            <li><i class="ion-email contacticon"></i><p>swd@swdpu.com.cn</p></li>
+          </ul>
+          <ul>
+            <li><i class="ion-ios-person contacticon"></i><p>海外市场部：周小姐</p></li>
+            <li><i class="ion-ios-telephone contacticon"></i><p>021-51905301</p></li>
+            <li><i class="ion-android-phone-portrait contacticon"></i><p>186 1663 4462</p></li>
+            <li><i class="ion-email contacticon"></i><p>swd@swdpu.com.cn</p></li>
+          </ul>
+        </div>
+
+        <!--BAIDU MAP//////////////////////////////////////////////////-->
+        <div class="row divcontact">
+          <div class="wrapper divcontact-wrapper">
+            <div id="dituContent">
+              
+            </div>
+            <div class="maptextwrapper">
+              <div>
+               <h3>上海公司地址</h3>
+               <p>上海市闵行区浦江镇联航路1688弄38幢3层</p>
+               <p>邮编: 201112</p>
+               <p>电话: 021-51905301</p>
+               <p>传真: 021-51905302</p>
+               <p>网址: www.swdurethane.com.cn</p>
+               <p>邮箱: swd@swdpu.com.cn</p>
+             </div>
+             
+
+
+             <div class="contactemployee">
+              <p>诚聘聚脲、聚氨酯行业销售精英（懂英语优先)</p>
+              <p>联系人：王先生 13120616592</p>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <!--FOOTER PART////////////////////////////////////////-->        
+  
+  <footer>
+    <div class="footer-wrapper clearfix row">
+
+      <ul>
+        <h4>SWD</h4>
+        <li><a href="http://www.swdurethane.com" target="_blank">SWD美国总公司</a></li>
+        <li><a href="http://www.swdurethane.com" target="_blank">SWD加拿大分公司</a></li>
+        <li><a href="http://www.swdurethane.cn" target="_blank">SWD上海分公司</a></li>
+        <li><a href="http://www.swdurethane.cn" target="_blank">SWD江苏分公司</a></li>
+        <li><a href="http://www.syswdpu.com" target="_blank">SWD沈阳分公司</a></li>
+        <li><a href="contactus.html">诚聘英才</a></li>
+      </ul>
+
+      <ul>
+        <h4>产品系列</h4>
+        <li><a href="product900.html">SWD双组分喷涂聚脲</a></li>
+        <li><a href="product951.html">SWD双组分喷涂聚氨酯(脲)</a></li>
+        <li><a href="#">SWD双组分冷喷聚脲</a></li>
+        <li><a href="product952.html">SWD单组分手刷聚脲</a></li>
+        <li><a href="product959.html">SWD单组份湿固化聚氨酯</a></li>
+        <li><a href="product961.html">SWD水性环保装饰涂料</a></li>
+        <li><a href="product250.html">SWD喷涂聚氨酯泡沫</a></li>
+      </ul>
+
+      <ul>
+        <h4>联系我们</h4>
+        <li>美国SWD顺缔新材料（上海）有限公司</li>
+        <li>电话： 021-5190 5301</li>
+        <li>传真： 021-5190 5302</li>
+        <li>E-mail: swd@swdpu.com.cn</li>
+      </ul>
+
+      <div class="smallphone-footer">
+        <h4>联系我们</h4>
+        <p>美国SWD顺缔新材料（上海）有限公司</p>
+        <p>电话： 021-5190 5301</p>
+        <p>传真： 021-5190 5302</p>
+        <p>E-mail: swd@swdpu.com.cn</p>
+      </div>      
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="vendor/jquery-migrate-1.12.4.js"></script>
+  <script type="text/javascript" src="vendor/responsiveslides.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/script.js" ></script>
+
+
+
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+        addPolyline();//向地图中添加线
+      }
+      
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.521706,31.085217);//定义一个中心点坐标
+        map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+      }
+      
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.disableKeyboard();//禁用键盘上下左右键移动地图，默认禁用(可不写)
+      }
+      
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_TOP_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+      }
+      
+    //标注点数组
+    var markerArr = [{title:"顺缔新材料（上海）有限公司",content:"联航路1688弄38号",point:"121.519666|31.084251",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+      for(var i=0;i<markerArr.length;i++){
+        var json = markerArr[i];
+        var p0 = json.point.split("|")[0];
+        var p1 = json.point.split("|")[1];
+        var point = new BMap.Point(p0,p1);
+        var iconImg = createIcon(json.icon);
+        var marker = new BMap.Marker(point,{icon:iconImg});
+        var iw = createInfoWindow(i);
+        var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+        marker.setLabel(label);
+        map.addOverlay(marker);
+        label.setStyle({
+          borderColor:"#808080",
+          color:"#333",
+          cursor:"pointer"
+        });
+        
+        (function(){
+          var index = i;
+          var _iw = createInfoWindow(i);
+          var _marker = marker;
+          _marker.addEventListener("click",function(){
+            this.openInfoWindow(_iw);
+          });
+          _iw.addEventListener("open",function(){
+            _marker.getLabel().hide();
+          })
+          _iw.addEventListener("close",function(){
+            _marker.getLabel().show();
+          })
+          label.addEventListener("click",function(){
+            _marker.openInfoWindow(_iw);
+          })
+          if(!!json.isOpen){
+            label.hide();
+            _marker.openInfoWindow(_iw);
+          }
+        })()
+      }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+      var json = markerArr[i];
+      var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+      return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+      var icon = new BMap.Icon("css/img/marker.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+      return icon;
+    }
+//标注线数组
+var plPoints = [{style:"solid",weight:3,color:"#00f",opacity:0.4,points:["121.519532|31.084081","121.51946|31.084467","121.519909|31.084521","121.519963|31.084174","121.519559|31.084096","121.519568|31.084112"]}
+];
+    //向地图中添加线函数
+    function addPolyline(){
+      for(var i=0;i<plPoints.length;i++){
+        var json = plPoints[i];
+        var points = [];
+        for(var j=0;j<json.points.length;j++){
+          var p1 = json.points[j].split("|")[0];
+          var p2 = json.points[j].split("|")[1];
+          points.push(new BMap.Point(p1,p2));
+        }
+        var line = new BMap.Polyline(points,{strokeStyle:json.style,strokeWeight:json.weight,strokeColor:json.color,strokeOpacity:json.opacity});
+        map.addOverlay(line);
+      }
+    }
+    
+    initMap();//创建和初始化地图
+  </script>
+
+</body>
+</html>
