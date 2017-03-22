@@ -14,6 +14,13 @@
 
 /* Big tablet to 1259px (widths smaller taht the 1140px row) */
 @media only screen and (max-width: 1280px) {
+  
+  .news-container p {
+    margin-top: 10px;
+    text-indent: 2rem;
+    padding: 0;
+}
+
 
   .certificateimg {
     width: 100%;

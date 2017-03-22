@@ -15,6 +15,13 @@
   }
   /* Big tablet to 1259px (widths smaller taht the 1140px row) */
   @media only screen and (max-width: 1280px) {
+    .news-container p {
+    margin-top: 10px;
+    text-indent: 2rem;
+    padding: 0;
+}
+
+
     .certificateimg {
       width: 100%;
       height: 672px;
@@ -203,6 +210,7 @@
     margin-left: 1rem;
     text-align: center;
   }
+
 
 
   /*///////////////////////////////////ABOUT PAGE////////////////*/
@@ -1158,7 +1166,7 @@
   text-align: justify;
   line-height: 22px;
   text-indent: 2rem;
-  padding-top: 0;
+  padding: 0;
   width: 100%;
   margin: 5px auto;
 }
